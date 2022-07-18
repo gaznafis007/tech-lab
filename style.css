@@ -1,0 +1,255 @@
+*{
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    background-color: cornsilk;
+    justify-content: space-around;
+}
+.header-text{
+    padding: 100px 0;
+    font-family: Roboto;
+}
+h3{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 2;
+}
+.heading{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+.highlight{
+    color: orange;
+}
+.sub-heading{
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: poppins;
+}
+.head-text{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 400;
+    padding: 12px 15px;
+    border-radius: 3px;
+    background-image: linear-gradient(to right top, #f85032, #f8b500);
+}
+/* header ends */
+main{
+    width: 90%;
+    margin: 4rem auto;
+}
+main .heading{
+    font-family: poppins;
+    font-weight: 500;
+    text-align: center;
+}
+.services{
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+
+}
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: cornsilk;
+    padding: 2rem 4rem;
+}
+.service-icon{
+    width: 30%;
+}
+.service-icon img{
+    width: 70%;
+}
+#big img{
+    width: 100%;
+}
+#big{
+    margin-right: 1rem;
+}
+.service-head{
+    text-transform: capitalize;
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 600;
+}
+.service-text p{
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+}
+.top-rated-products{
+    margin-top: 1.5rem;
+}
+.top-rated-products .sub-heading{
+    margin-top: 2rem;
+}
+.products{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    column-gap: 2rem;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2rem;
+
+}
+.product img{
+    width: 100%;
+}
+.product-text{
+    text-align: center;
+    font-family: poppins;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+.product-text .product-heading{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+}
+.contacts .heading{
+    margin-top: 3rem;
+}
+.mail-form{
+    margin-top: 2rem;
+    background-color: cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+.form-control{
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ddd;
+    border: 1px solid #888;
+    font-weight: 400;
+    padding: 12px 15px;
+    border-radius: 3px;
+    margin-right: 2px;
+}
+footer{
+    width: 100%;
+    background-color: black;
+    font-family: poppins;
+    padding: 4rem;
+    text-align: center;
+    
+}
+footer .heading{
+    color: #fff;
+}
+footer p{
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.5rem;
+}
+@media only screen and (max-width: 668px){
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    p{
+        font-size: 12px;
+    }
+    header{
+        width: 100%;
+    }
+    .head-text{
+        width: 70%;
+    }
+    .header-img{
+        display: none
+    }
+    main{
+        width: 90%;
+        margin: 2rem auto;
+    }
+    .services{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #big{
+        margin-left: -0.5rem;
+    }
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        row-gap: 2rem;
+    }
+}
+@media only screen and (max-width: 992px) and (min-width: 669px){
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 14px;
+    }
+    header{
+        width: 100%;
+    }
+    .header-text{
+        width: 40%;
+        margin-left: 2rem;
+    }
+    .header-img{
+        margin-left: 2rem;
+    }
+    .services{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .service{
+        width: 40%;
+        min-height: 350px;
+    }
+    .products{
+        display: flex;
+        width: 100%;
+        row-gap: 2rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .product{
+        width: 40%;
+    }
+}
